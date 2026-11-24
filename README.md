@@ -20,6 +20,13 @@ A free Flutter template for a WhatsApp-style messenger: chats and calls tabs, **
 - Light and dark themes generated from one seed color
 
 > **Calls are a UI simulation.** The screens, the timer and the call log work, but no audio or video travels between devices. See "Real calls" below.
+## Screens
+
+<img src="docs/screens/01-chats.svg" width="24%" alt="Chats"> <img src="docs/screens/02-calls.svg" width="24%" alt="Calls"> <img src="docs/screens/03-conversa.svg" width="24%" alt="Chat with photo, voice message and location"> <img src="docs/screens/04-anexar.svg" width="24%" alt="Attach menu">
+
+<img src="docs/screens/05-gravando.svg" width="24%" alt="Recording a voice message"> <img src="docs/screens/06-chamada-voz.svg" width="24%" alt="Voice call"> <img src="docs/screens/07-chamada-video.svg" width="24%" alt="Video call">
+
+Design illustrations of each screen.
 
 ## Run it
 
