@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" width="360" height="720" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"><defs></defs><rect width="360" height="720" fill="#fff"/>
+<text x="24" y="28" font-size="13" fill="#0f1c1a" font-weight="600" text-anchor="start">9:41</text>
+<rect x="300" y="18" width="24" height="11" rx="3" fill="none" stroke="#0f1c1a" stroke-width="1.3"/>
+<rect x="302" y="20" width="16" height="7" rx="1.5" fill="#0f1c1a" />
+<text x="20" y="72" font-size="26" fill="#0f1c1a" font-weight="800" text-anchor="start">Chatly</text>
+<rect x="106" y="54" width="22" height="22" rx="11" fill="#128c7e" />
+<text x="117" y="70" font-size="12" fill="#fff" font-weight="700" text-anchor="middle">3</text>
+<path d="M318 62a9 9 0 1 0 8 12a7 7 0 0 1-8-12z" fill="none" stroke="#0f1c1a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90" y="112" font-size="15" fill="#667781" font-weight="600" text-anchor="middle">Chats</text>
+<text x="270" y="112" font-size="15" fill="#128c7e" font-weight="700" text-anchor="middle">Calls</text>
+<rect x="210" y="122" width="120" height="3" rx="0" fill="#128c7e" />
+<rect x="0" y="125" width="360" height="1" rx="0" fill="#dfe5e3" />
+<circle cx="40" cy="184" r="22" fill="#7c5cff" />
+<text x="40" y="189.25" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">AS</text>
+<text x="74" y="180" font-size="15" fill="#e53935" font-weight="700" text-anchor="start">Ana Souza</text>
+<path d="M76 198l8-8M76 190v8h8" fill="none" stroke="#e53935" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="200" font-size="12.5" fill="#667781" font-weight="400" text-anchor="start">Missed video call · Today, 13:00</text>
+<path d="M318 178h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2zM332 182l6-3v10l-6-3" fill="none" stroke="#128c7e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="40" cy="260" r="22" fill="#f59e0b" />
+<text x="40" y="265.25" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">BL</text>
+<text x="74" y="256" font-size="15" fill="#0f1c1a" font-weight="700" text-anchor="start">Bruno Lima</text>
+<path d="M76 274l8-8M76 266h8v8" fill="none" stroke="#128c7e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="276" font-size="12.5" fill="#667781" font-weight="400" text-anchor="start">Voice call · Yesterday, 11:00</text>
+<path d="M320 252c-1 9 5 15 12 14l2-4-4-2-2 2c-3-1-4-3-5-6l2-2-2-4z" fill="none" stroke="#128c7e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="40" cy="336" r="22" fill="#ec4899" />
+<text x="40" y="341.25" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">CM</text>
+<text x="74" y="332" font-size="15" fill="#0f1c1a" font-weight="700" text-anchor="start">Carla Mendes</text>
+<path d="M76 350l8-8M76 342v8h8" fill="none" stroke="#128c7e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="352" font-size="12.5" fill="#667781" font-weight="400" text-anchor="start">Video call · Nov 22, 15:00</text>
+<path d="M318 330h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2zM332 334l6-3v10l-6-3" fill="none" stroke="#128c7e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="40" cy="412" r="22" fill="#7c5cff" />
+<text x="40" y="417.25" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">AS</text>
+<text x="74" y="408" font-size="15" fill="#0f1c1a" font-weight="700" text-anchor="start">Ana Souza</text>
+<path d="M76 426l8-8M76 418h8v8" fill="none" stroke="#128c7e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="428" font-size="12.5" fill="#667781" font-weight="400" text-anchor="start">Cancelled voice call · Nov 21, 09:12</text>
+<path d="M320 404c-1 9 5 15 12 14l2-4-4-2-2 2c-3-1-4-3-5-6l2-2-2-4z" fill="none" stroke="#128c7e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

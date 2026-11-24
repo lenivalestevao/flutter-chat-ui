@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" width="360" height="720" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"><defs><clipPath id="im"><rect x="144" y="236" width="188" height="150" rx="11"/></clipPath></defs><rect width="360" height="720" fill="#fff"/>
+<rect x="0" y="0" width="360" height="720" rx="0" fill="#efeae2" />
+<rect x="0" y="0" width="360" height="100" rx="0" fill="#fff" />
+<text x="24" y="28" font-size="13" fill="#0f1c1a" font-weight="600" text-anchor="start">9:41</text>
+<rect x="300" y="18" width="24" height="11" rx="3" fill="none" stroke="#0f1c1a" stroke-width="1.3"/>
+<rect x="302" y="20" width="16" height="7" rx="1.5" fill="#0f1c1a" />
+<path d="M22 62l-8 0M14 62l7-7M14 62l7 7" fill="none" stroke="#0f1c1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="60" cy="66" r="18" fill="#7c5cff" />
+<text x="60" y="70.55" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">AS</text>
+<text x="88" y="62" font-size="16" fill="#0f1c1a" font-weight="700" text-anchor="start">Ana Souza</text>
+<text x="88" y="82" font-size="12.5" fill="#667781" font-weight="400" text-anchor="start">online</text>
+<path d="M270 56h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-12a3 3 0 0 1-3-3v-12a3 3 0 0 1 3-3zM288 62l8-5v14l-8-5" fill="none" stroke="#0f1c1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M322 56c-1 11 6 18 14 17l2-5-5-2-2 2c-3-1-5-4-6-7l2-2-2-5z" fill="none" stroke="#0f1c1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="125" y="126" width="110" height="24" rx="12" fill="#fff" opacity=".9"/>
+<text x="180" y="143" font-size="12" fill="#667781" font-weight="600" text-anchor="middle">Today</text>
+<rect x="16" y="160" width="220" height="44" rx="14" fill="#fff" />
+<text x="30" y="182" font-size="13" fill="#0f1c1a" font-weight="400" text-anchor="start">Are we still on for the review?</text>
+<text x="224" y="197" font-size="10" fill="#667781" font-weight="400" text-anchor="end">14:20</text>
+<rect x="128" y="216" width="216" height="170" rx="14" fill="#d9fdd3" />
+<g clip-path="url(#im)"><rect x="144" y="236" width="188" height="150" fill="#9bd1e8"/><circle cx="290" cy="270" r="18" fill="#ffe08a"/><path d="M144 386V330l50-44 46 40 34-26 58 36v50z" fill="#4a9a7d"/><path d="M144 386V362l64-30 56 30 68-18v42z" fill="#2f7a63"/></g>
+<rect x="274" y="364" width="52" height="16" rx="8" fill="#000" opacity=".4"/>
+<text x="284" y="376" font-size="10" fill="#fff" font-weight="400" text-anchor="start">14:22</text>
+<path d="M308 373l3.5 3.5 7-8M313 376.5l1.5 1.5 7-8" fill="none" stroke="#53bdea" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="400" width="244" height="60" rx="14" fill="#fff" />
+<circle cx="44" cy="428" r="17" fill="#128c7e" />
+<path d="M38 420l14 8-14 8z" fill="#fff" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="70" y="425" width="3" height="6" rx="1.5" fill="#128c7e" />
+<rect x="77" y="417.1" width="3" height="21.9" rx="1.5" fill="#128c7e" />
+<rect x="84" y="423" width="3" height="10.1" rx="1.5" fill="#128c7e" />
+<rect x="91" y="417.6" width="3" height="20.8" rx="1.5" fill="#128c7e" />
+<rect x="98" y="421" width="3" height="13.9" rx="1.5" fill="#128c7e" />
+<rect x="105" y="418.6" width="3" height="18.8" rx="1.5" fill="#128c7e" />
+<rect x="112" y="419.4" width="3" height="17.2" rx="1.5" fill="#128c7e" />
+<rect x="119" y="420.1" width="3" height="15.9" rx="1.5" fill="#128c7e" />
+<rect x="126" y="418.1" width="3" height="19.7" rx="1.5" fill="#128c7e" />
+<rect x="133" y="421.8" width="3" height="12.3" rx="1.5" fill="#b7c4c1" />
+<rect x="140" y="417.3" width="3" height="21.4" rx="1.5" fill="#b7c4c1" />
+<rect x="147" y="423.8" width="3" height="8.4" rx="1.5" fill="#b7c4c1" />
+<rect x="154" y="417" width="3" height="22" rx="1.5" fill="#b7c4c1" />
+<rect x="161" y="424.1" width="3" height="7.7" rx="1.5" fill="#b7c4c1" />
+<rect x="168" y="417.2" width="3" height="21.5" rx="1.5" fill="#b7c4c1" />
+<rect x="175" y="422.1" width="3" height="11.7" rx="1.5" fill="#b7c4c1" />
+<rect x="182" y="418" width="3" height="20.1" rx="1.5" fill="#b7c4c1" />
+<rect x="189" y="420.3" width="3" height="15.4" rx="1.5" fill="#b7c4c1" />
+<rect x="196" y="419.2" width="3" height="17.7" rx="1.5" fill="#b7c4c1" />
+<rect x="203" y="418.8" width="3" height="18.4" rx="1.5" fill="#b7c4c1" />
+<rect x="210" y="420.8" width="3" height="14.5" rx="1.5" fill="#b7c4c1" />
+<rect x="217" y="417.7" width="3" height="20.6" rx="1.5" fill="#b7c4c1" />
+<rect x="224" y="422.6" width="3" height="10.7" rx="1.5" fill="#b7c4c1" />
+<rect x="231" y="417.1" width="3" height="21.8" rx="1.5" fill="#b7c4c1" />
+<text x="34" y="452" font-size="11" fill="#667781" font-weight="400" text-anchor="start">0:14</text>
+<text x="246" y="452" font-size="10" fill="#667781" font-weight="400" text-anchor="end">14:23</text>
+<rect x="128" y="472" width="216" height="150" rx="14" fill="#d9fdd3" />
+<rect x="138" y="482" width="196" height="100" rx="10" fill="#e8e0d0" />
+<rect x="138" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="170" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="202" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="234" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="266" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="298" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="330" y="482" width="1" height="100" rx="0" fill="#d8cfbb" />
+<rect x="138" y="482" width="196" height="1" rx="0" fill="#d8cfbb" />
+<rect x="138" y="514" width="196" height="1" rx="0" fill="#d8cfbb" />
+<rect x="138" y="546" width="196" height="1" rx="0" fill="#d8cfbb" />
+<rect x="138" y="578" width="196" height="1" rx="0" fill="#d8cfbb" />
+<path d="M138 560Q210 500 334 540" fill="none" stroke="#c9bea6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236 540c-8-8-8-20 0-26a8 8 0 0 1 0 26z" fill="#e53935" stroke="#e53935" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140" y="600" font-size="13" fill="#0f1c1a" font-weight="700" text-anchor="start">Shared location</text>
+<text x="140" y="614" font-size="11" fill="#667781" font-weight="400" text-anchor="start">-23.55052, -46.63331</text>
+<path d="M314 612l3.5 3.5 7-8M319 615.5l1.5 1.5 7-8" fill="none" stroke="#53bdea" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0" y="650" width="360" height="70" rx="0" fill="#fff" />
+<circle cx="28" cy="684" r="13" fill="none" stroke="#667781" stroke-width="1.8"/>
+<path d="M28 678v12M22 684h12" fill="none" stroke="#667781" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="52" y="662" width="232" height="44" rx="22" fill="#f0f2f5" />
+<text x="70" y="690" font-size="14" fill="#667781" font-weight="400" text-anchor="start">Message</text>
+<circle cx="322" cy="684" r="22" fill="#128c7e" />
+<rect x="317" y="672" width="10" height="16" rx="5" fill="#fff" />
+<path d="M312 684a10 10 0 0 0 20 0M322 694v5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
