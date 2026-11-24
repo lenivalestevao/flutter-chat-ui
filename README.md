@@ -1,6 +1,6 @@
 # 💬 Flutter Chat UI (WhatsApp style)
 
-<p align="center"><img src="docs/preview.svg" alt="App preview" width="100%"></p>
+<img src="docs/preview.svg?v=2" alt="App preview" width="100%">
 
 <sub>Preview: design illustration of the screens, in the light theme. Run the app to see the real thing.</sub>
 
