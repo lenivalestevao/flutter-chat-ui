@@ -1,11 +1,11 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 import '../core/format.dart';
 import '../core/scope.dart';
 import '../core/widgets.dart';
-import '../data/models.dart';
+import 'bubbles.dart';
+import 'call_screen.dart';
+import 'composer.dart';
 
 /// Header, messages and composer for one conversation.
 class ChatPane extends StatefulWidget {
@@ -20,22 +20,13 @@ class ChatPane extends StatefulWidget {
 
 class _ChatPaneState extends State<ChatPane> {
   final _scroll = ScrollController();
-  final _input = TextEditingController();
   String? _lastId;
   int _lastCount = -1;
 
   @override
   void dispose() {
     _scroll.dispose();
-    _input.dispose();
     super.dispose();
-  }
-
-  void _submit() {
-    final text = _input.text;
-    if (text.trim().isEmpty) return;
-    ChatScope.of(context).send(widget.conversationId, text);
-    _input.clear();
   }
 
   void _scrollToEnd() {
@@ -86,6 +77,20 @@ class _ChatPaneState extends State<ChatPane> {
             ),
           ],
         ),
+        actions: [
+          IconButton(
+            key: const Key('video-call'),
+            tooltip: 'Video call',
+            onPressed: () => startCall(context, c.id, video: true),
+            icon: const Icon(Icons.videocam_outlined),
+          ),
+          IconButton(
+            key: const Key('voice-call'),
+            tooltip: 'Voice call',
+            onPressed: () => startCall(context, c.id, video: false),
+            icon: const Icon(Icons.call_outlined),
+          ),
+        ],
         shape: Border(bottom: BorderSide(color: scheme.outlineVariant)),
       ),
       body: Column(
@@ -97,13 +102,13 @@ class _ChatPaneState extends State<ChatPane> {
               children: [
                 for (final g in groups) ...[
                   _DayChip(g.label),
-                  for (final m in g.messages) _Bubble(message: m),
+                  for (final m in g.messages) MessageBubble(message: m),
                 ],
                 if (typing) const _TypingBubble(),
               ],
             ),
           ),
-          _Composer(controller: _input, onSend: _submit),
+          Composer(conversationId: c.id),
         ],
       ),
     );
@@ -135,48 +140,6 @@ class _DayChip extends StatelessWidget {
   }
 }
 
-class _Bubble extends StatelessWidget {
-  const _Bubble({required this.message});
-
-  final Message message;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final mine = message.from == Sender.me;
-    final bg = mine ? scheme.primary : scheme.surfaceContainerHighest;
-    final fg = mine ? scheme.onPrimary : scheme.onSurface;
-    final maxWidth = min(460.0, MediaQuery.sizeOf(context).width * 0.7);
-
-    return Align(
-      alignment: mine ? Alignment.centerRight : Alignment.centerLeft,
-      child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 3),
-        padding: const EdgeInsets.fromLTRB(14, 8, 12, 6),
-        constraints: BoxConstraints(maxWidth: maxWidth),
-        decoration: BoxDecoration(
-          color: bg,
-          borderRadius: BorderRadius.only(
-            topLeft: const Radius.circular(18),
-            topRight: const Radius.circular(18),
-            bottomLeft: Radius.circular(mine ? 18 : 6),
-            bottomRight: Radius.circular(mine ? 6 : 18),
-          ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(message.text, style: TextStyle(color: fg, fontSize: 15, height: 1.3)),
-            const SizedBox(height: 2),
-            Text(formatTime(message.at), style: TextStyle(color: fg.withValues(alpha: 0.65), fontSize: 11)),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 class _TypingBubble extends StatelessWidget {
   const _TypingBubble();
 
@@ -199,58 +162,6 @@ class _TypingBubble extends StatelessWidget {
           ),
         ),
         child: const TypingDots(),
-      ),
-    );
-  }
-}
-
-class _Composer extends StatelessWidget {
-  const _Composer({required this.controller, required this.onSend});
-
-  final TextEditingController controller;
-  final VoidCallback onSend;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Material(
-      color: scheme.surface,
-      child: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 10, 12, 10),
-          child: Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  key: const Key('composer'),
-                  controller: controller,
-                  textInputAction: TextInputAction.send,
-                  onSubmitted: (_) => onSend(),
-                  decoration: InputDecoration(
-                    hintText: 'Write a message…',
-                    filled: true,
-                    isDense: true,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: BorderSide.none),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              ValueListenableBuilder<TextEditingValue>(
-                valueListenable: controller,
-                builder: (context, value, _) {
-                  return IconButton.filled(
-                    key: const Key('send'),
-                    tooltip: 'Send message',
-                    onPressed: value.text.trim().isEmpty ? null : onSend,
-                    icon: const Icon(Icons.send_rounded),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

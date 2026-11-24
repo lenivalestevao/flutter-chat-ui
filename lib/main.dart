@@ -4,6 +4,7 @@ import 'core/scope.dart';
 import 'core/theme.dart';
 import 'data/chat_store.dart';
 import 'features/home_shell.dart';
+import 'services/device_media_service.dart';
 
 void main() => runApp(const ChatlyApp());
 
@@ -18,7 +19,7 @@ class ChatlyApp extends StatefulWidget {
 }
 
 class _ChatlyAppState extends State<ChatlyApp> {
-  late final ChatStore _store = widget.store ?? ChatStore();
+  late final ChatStore _store = widget.store ?? ChatStore(media: DeviceMediaService());
 
   @override
   void dispose() {

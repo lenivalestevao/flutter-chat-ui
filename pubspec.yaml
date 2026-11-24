@@ -1,7 +1,7 @@
 name: chatly_chat
-description: Free Flutter chat UI template. Material 3, Dart 3, no third-party packages.
+description: Free Flutter chat UI template in the style of WhatsApp. Voice and video call screens, image, voice message and location sharing, read receipts.
 publish_to: "none"
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
   sdk: ^3.8.0
@@ -10,6 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  image_picker: ^1.1.2
+  record: ^6.0.0
+  audioplayers: ^6.1.0
+  geolocator: ^13.0.2
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:

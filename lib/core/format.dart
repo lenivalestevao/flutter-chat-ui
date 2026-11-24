@@ -16,6 +16,12 @@ String formatTime(DateTime t) {
   return '$h:$m';
 }
 
+/// 75 seconds becomes "1:15".
+String formatDuration(Duration d) {
+  final s = (d.inSeconds % 60).toString().padLeft(2, '0');
+  return '${d.inMinutes}:$s';
+}
+
 DateTime dayOnly(DateTime d) => DateTime(d.year, d.month, d.day);
 
 /// "Today", "Yesterday" or a short date such as "Nov 20".
@@ -52,10 +58,36 @@ List<DayGroup> groupByDay(List<Message> messages, DateTime now) {
   return groups;
 }
 
+/// "Missed video call", "Cancelled voice call", "Voice call"...
+String callTitle(Message m) {
+  final info = m.call!;
+  final kind = info.video ? 'video' : 'voice';
+  if (info.missed) {
+    return m.from == Sender.them ? 'Missed $kind call' : 'Cancelled $kind call';
+  }
+  return info.video ? 'Video call' : 'Voice call';
+}
+
+/// Text shown in the conversation list for one message.
+String previewText(Message m) {
+  switch (m.kind) {
+    case MessageKind.text:
+      return m.text;
+    case MessageKind.image:
+      return '📷 Photo';
+    case MessageKind.audio:
+      return '🎤 ${formatDuration(m.audioDuration)}';
+    case MessageKind.location:
+      return '📍 Location';
+    case MessageKind.call:
+      return '${m.call!.video ? '📹' : '📞'} ${callTitle(m)}';
+  }
+}
+
 /// One-line preview for the conversation list.
 String preview(Conversation c, {int max = 42}) {
   final m = c.last;
   if (m == null) return 'No messages yet';
-  final text = (m.from == Sender.me ? 'You: ' : '') + m.text;
+  final text = (m.from == Sender.me && m.kind != MessageKind.call ? 'You: ' : '') + previewText(m);
   return text.length > max ? '${text.substring(0, max - 1).trimRight()}…' : text;
 }
