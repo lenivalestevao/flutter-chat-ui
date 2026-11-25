@@ -1,5 +1,9 @@
 # 💬 Flutter Chat UI (WhatsApp style)
 
+[![Live demo](https://img.shields.io/badge/demo-live-brightgreen)](https://lenivalestevao.github.io/flutter-chat-ui/) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![Flutter](https://img.shields.io/badge/Flutter-3.32%2B-02569B?logo=flutter&logoColor=white) ![Platforms](https://img.shields.io/badge/platforms-Android%20%7C%20iOS%20%7C%20Web-lightgrey)
+
+**[▶ Try the live demo in your browser](https://lenivalestevao.github.io/flutter-chat-ui/)**: send messages, switch to dark mode and open the Calls tab. Nothing to install.
+
 <img src="docs/screens.svg?v=1" alt="App screens" width="100%">
 
 <sub>Preview: design illustration of the screens, in the light theme. Run the app to see the real thing.</sub>
@@ -93,3 +97,5 @@ To carry real audio and video, put a call SDK inside `CallScreen` (`lib/features
 ## License
 
 MIT. Free for personal and commercial use.
+
+If this template saved you time, a ⭐ on the repo helps other developers find it.
